@@ -1,0 +1,60 @@
+{
+  "name":"monstro-da-semana-pt-br",
+  "title":"Monstro da Semana - Português (Brasil)",
+  "description":"Tradução para usar com o sistema PbtA Monstro da Semana.",
+  "version":"0.2.4",
+  "author":"Mestre Digital",
+  "minimumCoreVersion":"0.8.9",
+  "compatibleCoreVersion":"0.8.9",
+  "esmodules": ["babele-register.js"],
+  "url":"https://github.com/brunocalado/monstro-da-semana-pt-br",
+  "manifest": "https://raw.githubusercontent.com/brunocalado/monstro-da-semana-pt-br/main/module.json",
+  "download": "https://codeload.github.com/brunocalado/monstro-da-semana-pt-br/zip/main",
+   "languages":[
+      {
+         "lang": "pt-BR",
+         "name": "Português (Brasil)",
+         "path":"pt-br.json"
+      }
+   ],
+   "dependencies":[
+      {
+         "name":"babele",
+         "manifest":"https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json"
+      },
+      {
+        "name": "pbta",
+        "type": "system"
+      }
+   ],
+
+ "styles": [
+    "./styles/style.css"
+  ],
+
+  
+  "system": [
+    "pbta"
+  ],
+  
+  "packs": [
+    {
+      "label": "Regras - Monstro da Semana",
+      "entity": "JournalEntry",
+      "name": "regras-monstro-da-semana",
+      "path": "packs/regras-monstro-da-semana.db",
+      "system": "pbta",
+      "package": "world",
+      "private": false
+    },
+    {
+      "label": "Marcas",
+      "entity": "Item",
+      "name": "marcas",
+      "path": "packs/marcas.db",
+      "system": "pbta",
+      "package": "world",
+      "private": false
+    }
+  ]
+}
