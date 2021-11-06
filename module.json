@@ -1,8 +1,8 @@
 {
   "name":"monstro-da-semana-pt-br",
   "title":"Monstro da Semana - Português (Brasil)",
-  "description":"Tradução para usar com o sistema PbtA Monstro da Semana.",
-  "version":"0.2.4",
+  "description":"Monstro da Semana para usar com o sistema PbtA.",
+  "version":"0.0.1,
   "author":"Mestre Digital",
   "minimumCoreVersion":"0.8.9",
   "compatibleCoreVersion":"0.8.9",
@@ -10,7 +10,7 @@
   "url":"https://github.com/brunocalado/monstro-da-semana-pt-br",
   "manifest": "https://raw.githubusercontent.com/brunocalado/monstro-da-semana-pt-br/main/module.json",
   "download": "https://codeload.github.com/brunocalado/monstro-da-semana-pt-br/zip/main",
-   "languages":[
+  "languages":[
       {
          "lang": "pt-BR",
          "name": "Português (Brasil)",
@@ -19,17 +19,13 @@
    ],
    "dependencies":[
       {
-         "name":"babele",
-         "manifest":"https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json"
-      },
-      {
         "name": "pbta",
         "type": "system"
       }
    ],
 
  "styles": [
-    "./styles/style.css"
+    
   ],
 
   
