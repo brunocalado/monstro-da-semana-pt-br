@@ -2,11 +2,11 @@
   "name":"monstro-da-semana-pt-br",
   "title":"Monstro da Semana - Português (Brasil)",
   "description":"Monstro da Semana para usar com o sistema PbtA.",
-  "version":"0.0.1,
+  "version":"0.0.2",
   "author":"Mestre Digital",
   "minimumCoreVersion":"0.8.9",
   "compatibleCoreVersion":"0.8.9",
-  "esmodules": ["babele-register.js"],
+  "esmodules": [],
   "url":"https://github.com/brunocalado/monstro-da-semana-pt-br",
   "manifest": "https://raw.githubusercontent.com/brunocalado/monstro-da-semana-pt-br/main/module.json",
   "download": "https://codeload.github.com/brunocalado/monstro-da-semana-pt-br/zip/main",
@@ -24,9 +24,7 @@
       }
    ],
 
- "styles": [
-    
-  ],
+ "styles": [],
 
   
   "system": [
@@ -48,6 +46,15 @@
       "entity": "Item",
       "name": "marcas",
       "path": "packs/marcas.db",
+      "system": "pbta",
+      "package": "world",
+      "private": false
+    },
+    {
+      "label": "Movimentos",
+      "entity": "Item",
+      "name": "movimentos",
+      "path": "packs/movimentos.db",
       "system": "pbta",
       "package": "world",
       "private": false
