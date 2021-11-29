@@ -2,8 +2,8 @@
 <b>Módulo de tradução para Monstro do Semana</b>
 
 # Aprenda!
-[(https://img.youtube.com/vi/sidOMd7xqdc/0.jpg)](https://www.youtube.com/watch?v=sidOMd7xqdc)
-https://youtu.be/sidOMd7xqdc
+[![Monstro da Semana no Foundry VTT](https://img.youtube.com/vi/sidOMd7xqdc/0.jpg)](https://www.youtube.com/watch?v=sidOMd7xqdc)
+
 # Instalação
 Instale o manifesto: https://raw.githubusercontent.com/brunocalado/monstro-da-semana-pt-br/main/module.json
 
