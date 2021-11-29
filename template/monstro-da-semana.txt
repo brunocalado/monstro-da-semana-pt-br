@@ -1,12 +1,15 @@
-# v1.1
+# v1.2
 
 # Configure Rolls
 rollFormula = "2d6"
 
 # Define roll result ranges.
 [rollResults]
+  [rollResults.critical]
+    range = "12+"
+    label = "Movimento Avançado!"
   [rollResults.success]
-    range = "10+"
+    range = "10-11"
     label = "Sucesso!"
   [rollResults.partial]
     range = "7-9"
