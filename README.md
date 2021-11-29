@@ -2,7 +2,10 @@
 <b>Módulo de tradução para Monstro do Semana</b>
 
 # Aprenda!
-[![Scum and Villainy no Foundry VTT](https://img.youtube.com/vi/HWh4sbjg1ww/0.jpg)](https://www.youtube.com/watch?v=HWh4sbjg1ww)
+[(https://img.youtube.com/vi/sidOMd7xqdc/0.jpg)](https://www.youtube.com/watch?v=sidOMd7xqdc)
+https://youtu.be/sidOMd7xqdc
+# Instalação
+Instale o manifesto: https://raw.githubusercontent.com/brunocalado/monstro-da-semana-pt-br/main/module.json
 
 # Como Usar
  
