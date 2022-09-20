@@ -1,5 +1,5 @@
 # Monstro do Semana - Português (Brasil)
-<b>Módulo de tradução para Monstro do Semana</b>
+**Módulo de tradução para Monstro do Semana**
 
 # Aprenda!
 [![Monstro da Semana no Foundry VTT](https://img.youtube.com/vi/sidOMd7xqdc/0.jpg)](https://www.youtube.com/watch?v=sidOMd7xqdc)

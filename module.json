@@ -1,15 +1,30 @@
 {
-  "name":"monstro-da-semana-pt-br",
+  "id":"monstro-da-semana-pt-br",
   "title":"Monstro da Semana - Português (Brasil)",
   "description":"Monstro da Semana para usar com o sistema PbtA.",
-  "version":"0.1.6",
-  "author":"Mestre Digital",
-  "minimumCoreVersion":"9",
-  "compatibleCoreVersion":"10",
+  
+  "version":"0.1.7",
+  
+  "authors": [
+    {
+      "name": "Mestre Digital",
+      "url": "https://www.youtube.com/c/MestreDigital",
+      "flags": {}
+    }
+  ],
+  
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10",
+    "maximum": "10"
+  },
+  
   "esmodules": [],
+  
   "url":"https://github.com/brunocalado/monstro-da-semana-pt-br",
   "manifest": "https://raw.githubusercontent.com/brunocalado/monstro-da-semana-pt-br/main/module.json",
   "download": "https://codeload.github.com/brunocalado/monstro-da-semana-pt-br/zip/main",
+  
   "languages":[
       {
          "lang": "pt-BR",
@@ -17,29 +32,29 @@
          "path":"pt-br.json"
       }
    ],
-   "dependencies":[
-       {
-        "type": "module",
-        "name": "compendium-folders",
-        "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json"
-      },
+
+  "relationships": {
+    "systems": [
       {
-        "name": "pbta",
+        "id": "pbta",
         "type": "system"
       }
-   ],
+    ],
+    "requires": [
+      {
+        "id": "compendium-folders",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json"
+      }
+    ]
+  },
 
  "styles": [],
-
-  
-  "system": [
-    "pbta"
-  ],
   
   "packs": [
     {
       "label": "Regras - Monstro da Semana",
-      "entity": "JournalEntry",
+      "type": "JournalEntry",
       "name": "regras-monstro-da-semana",
       "path": "packs/regras-monstro-da-semana.db",
       "system": "pbta",
@@ -48,7 +63,7 @@
     },
     {
       "label": "Marcas",
-      "entity": "Item",
+      "type": "Item",
       "name": "marcas",
       "path": "packs/marcas.db",
       "system": "pbta",
@@ -57,7 +72,7 @@
     },
     {
       "label": "Equipamentos",
-      "entity": "Item",
+      "type": "Item",
       "name": "equipamentos",
       "path": "packs/equipamentos.db",
       "system": "pbta",
@@ -66,7 +81,7 @@
     },    
     {
       "label": "Movimentos",
-      "entity": "Item",
+      "type": "Item",
       "name": "movimentos",
       "path": "packs/movimentos.db",
       "system": "pbta",
