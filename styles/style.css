@@ -1,0 +1,28 @@
+/* pc sheet background */
+.pbta.actor .window-content {
+  background-image: url(../assets/fundo.webp);                         
+}
+
+/* npc sheet background */
+.pbta.actor.npc .window-content {
+  background-image: url("systems/pbta/assets/concrete-seamless.webp");
+}
+/* Stat color */
+.pbta.sheet .sheet-attributes .cell--stats .stat {
+  background: #bf0000;
+}
+
+/* Stat color hover */
+.pbta.sheet .sheet-attributes .cell--stats .stat:hover {
+  background: #ff0000;
+}  
+
+.pbta.sheet .cell__title {
+  margin: 5px 0 5px;
+  height: 24px;
+}
+
+/* reduce list space*/
+ul, ol {
+  padding: 0 0 0 0.5em;
+}

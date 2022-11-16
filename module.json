@@ -3,7 +3,7 @@
   "title":"Monstro da Semana - Português (Brasil)",
   "description":"Monstro da Semana para usar com o sistema PbtA.",
   
-  "version":"0.1.7",
+  "version":"0.1.8",
   
   "authors": [
     {
@@ -15,11 +15,12 @@
   
   "compatibility": {
     "minimum": "10",
-    "verified": "10",
-    "maximum": "10"
+    "verified": "10"
   },
   
   "esmodules": [],
+  "scripts": ["./scripts/init.js"],  
+  "styles": ["./styles/style.css"],  
   
   "url":"https://github.com/brunocalado/monstro-da-semana-pt-br",
   "manifest": "https://raw.githubusercontent.com/brunocalado/monstro-da-semana-pt-br/main/module.json",
@@ -39,54 +40,16 @@
         "id": "pbta",
         "type": "system"
       }
-    ],
-    "requires": [
-      {
-        "id": "compendium-folders",
-        "type": "module",
-        "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json"
-      }
     ]
   },
 
- "styles": [],
-  
   "packs": [
     {
-      "label": "Regras - Monstro da Semana",
-      "type": "JournalEntry",
-      "name": "regras-monstro-da-semana",
-      "path": "packs/regras-monstro-da-semana.db",
-      "system": "pbta",
-      "package": "world",
-      "private": false
-    },
-    {
-      "label": "Marcas",
-      "type": "Item",
-      "name": "marcas",
-      "path": "packs/marcas.db",
-      "system": "pbta",
-      "package": "world",
-      "private": false
-    },
-    {
-      "label": "Equipamentos",
-      "type": "Item",
-      "name": "equipamentos",
-      "path": "packs/equipamentos.db",
-      "system": "pbta",
-      "package": "world",
-      "private": false
-    },    
-    {
-      "label": "Movimentos",
-      "type": "Item",
-      "name": "movimentos",
-      "path": "packs/movimentos.db",
-      "system": "pbta",
-      "package": "world",
-      "private": false
+      "label": "Monstro da Semana",
+      "type": "Adventure",
+      "name": "monstro-da-semana",
+      "path": "packs/monstro-da-semana.db",
+      "system": "pbta"
     }
   ]
 }
