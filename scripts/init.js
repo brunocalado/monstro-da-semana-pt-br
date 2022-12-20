@@ -212,22 +212,26 @@ Hooks.once('pbtaSheetConfig', () => {
             "condition": false,
             "options": {
               "0": {
-                "label": "Monstro",
-                "value": false
-              },
-              "1": {
-                "label": "Lacaio",
-                "value": false
-              },
-              "2": {
                 "label": "Espectador",
                 "value": false
               },
+              "1": {
+                "label": "Fenômeno",
+                "value": false
+              }, 
+              "2": {
+                "label": "Lacaio",
+                "value": false
+              },              
               "3": {
                 "label": "Local",
                 "value": false
-              }
-            }
+              },
+              "4": {
+                "label": "Monstro",
+                "value": false
+              }              
+            }            
           },
           "tipo": {
             "label": "Tipo",
