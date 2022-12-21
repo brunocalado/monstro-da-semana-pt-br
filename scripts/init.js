@@ -1,3 +1,9 @@
+// ----------------------------------
+// Versão: 1.5
+// ----------------------------------
+
+/*
+
 Hooks.once('pbtaSheetConfig', () => {
   // Disable the sheet config form.
   game.settings.set('pbta', 'sheetConfigOverride', true);
@@ -31,16 +37,8 @@ Hooks.once('pbtaSheetConfig', () => {
     "actorTypes": {
       "character": {
         "stats": {
-          "cool": {
-            "label": "Firmeza",
-            "value": 0
-          },
           "tough": {
             "label": "Braveza",
-            "value": 0
-          },
-          "charm": {
-            "label": "Sutileza",
             "value": 0
           },
           "sharp": {
@@ -49,6 +47,14 @@ Hooks.once('pbtaSheetConfig', () => {
           },
           "weird": {
             "label": "Estranheza",
+            "value": 0
+          },          
+          "cool": {
+            "label": "Firmeza",
+            "value": 0
+          },
+          "charm": {
+            "label": "Sutileza",
             "value": 0
           }
         },
@@ -112,25 +118,16 @@ Hooks.once('pbtaSheetConfig', () => {
               false
             ]
           }
-        },
-        "attrLeft": {
-          "reserva": {
-            "label": "Reserva 1",
-            "description": "Cada ponto pode ser gasto para obter um efeito específico.",
-            "customLabel": false,
-            "userLabel": false,
-            "type": "Resource",
-            "value": 0,
-            "max": 0
-          },
-          "reserva2": {
-            "label": "Reserva 2",
-            "description": "Cada ponto pode ser gasto para obter um efeito específico.",
-            "customLabel": false,
-            "userLabel": false,
-            "type": "Resource",
-            "value": 0,
-            "max": 0
+        },        
+        "attrLeft": {          
+          "reservas": {
+            "type": "ListMany",
+            "label": "Reservas",
+            "description": "Cada ponto pode ser gasto para obter um efeito específico.",            
+            "options": [
+              "[Text]|3",
+              "[Text]|3"
+            ]            
           },
           "xp": {
             "label": "Experiência",
@@ -275,3 +272,5 @@ Hooks.once('pbtaSheetConfig', () => {
   };
   
 })
+
+*/
