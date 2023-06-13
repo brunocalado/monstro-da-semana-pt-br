@@ -3,7 +3,7 @@
   "title":"Monstro da Semana - Português (Brasil)",
   "description":"Monstro da Semana para usar com o sistema PbtA.",
   
-  "version":"0.2.3",
+  "version":"0.2.4",
   
   "authors": [
     {
@@ -14,8 +14,8 @@
   ],
   
   "compatibility": {
-    "minimum": "10",
-    "verified": "10"
+    "minimum": "11",
+    "verified": "11"
   },
   
   "esmodules": [],
@@ -48,7 +48,7 @@
       "label": "Monstro da Semana",
       "type": "Adventure",
       "name": "monstro-da-semana",
-      "path": "packs/monstro-da-semana.db",
+      "path": "packs/monstro-da-semana",
       "system": "pbta"
     }
   ]
