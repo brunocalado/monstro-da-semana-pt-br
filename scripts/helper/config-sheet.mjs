@@ -1,15 +1,10 @@
-// ----------------------------------
-// Versão: 1.5
-// ----------------------------------
+export const configSheet = async () => {
 
-/*
-
-Hooks.once('pbtaSheetConfig', () => {
-  // Disable the sheet config form.
-  game.settings.set('pbta', 'sheetConfigOverride', true);
+   // pass the MotW sheet object to sheetConfig
 
   // Replace the game.pbta.sheetConfig with your own version.
   // get with: console.log(game.pbta.sheetConfig)
+  // 1.5?
   game.pbta.sheetConfig = {
     "rollFormula": "2d6",
     "rollResults": {
@@ -34,6 +29,7 @@ Hooks.once('pbtaSheetConfig', () => {
         "label": "Falha..."
       }
     },
+    
     "actorTypes": {
       "character": {
         "stats": {
@@ -270,7 +266,17 @@ Hooks.once('pbtaSheetConfig', () => {
       }
     }
   };
-  
-})
 
-*/
+   // check if users wants to override settings; if not, hide all PbtA sheet options
+   let overrideSettings = await game.settings.get('monstro-da-semana-pt-br', 'settings-override');
+
+   if (!overrideSettings) {
+      await game.settings.set('pbta', 'advForward', true);
+      await game.settings.set('pbta', 'hideRollFormula', true);
+      await game.settings.set('pbta', 'hideForward', false);
+      await game.settings.set('pbta', 'hideOngoing', false);
+      await game.settings.set('pbta', 'hideRollMode', true);
+      await game.settings.set('pbta', 'hideUses', true);
+   }
+
+}

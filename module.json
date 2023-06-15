@@ -3,7 +3,7 @@
   "title":"Monstro da Semana - Português (Brasil)",
   "description":"Monstro da Semana para usar com o sistema PbtA.",
   
-  "version":"0.2.4",
+  "version":"0.2.5",
   
   "authors": [
     {
@@ -18,9 +18,11 @@
     "verified": "11"
   },
   
-  "esmodules": [],
-  "scripts": ["./scripts/init.js"],  
-  "styles": ["./styles/style.css"],  
+  "esmodules":[
+    "./scripts/motw-for-pbta.mjs"
+   ],  
+   
+  "styles": ["./styles/motw-for-pbta.css"],  
   
   "url":"https://github.com/brunocalado/monstro-da-semana-pt-br",
   "manifest": "https://raw.githubusercontent.com/brunocalado/monstro-da-semana-pt-br/main/module.json",
