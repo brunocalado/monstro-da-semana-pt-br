@@ -1,7 +1,8 @@
-# v1.5
+# v1.8
 
 # Configure Rolls
 rollFormula = "2d6"
+rollShifting = true
 
 # Define roll result ranges.
 [rollResults]
@@ -75,6 +76,11 @@ rollFormula = "2d6"
       description = "Quando rolar falha ou um movimento disser, marque Xp."
       max = 5
       default = 0        
+    [character.attributesLeft.advances]
+      type = "Number"
+      label = "Melhorias"
+      description = "Toda vez que colocar uma melhoria no personagem, some 1 aqui."
+      default = 0
       
   # Define groups for moves.
   [character.moveTypes]

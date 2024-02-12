@@ -1,3 +1,8 @@
-2023/06/15-09:26:23.272 2888 Recovering log #8
-2023/06/15-09:26:23.278 2888 Delete type=0 #8
-2023/06/15-09:26:23.279 2888 Delete type=3 #6
+2024/01/16-13:57:12.531 275c Recovering log #35
+2024/01/16-13:57:12.540 275c Delete type=0 #35
+2024/01/16-13:57:12.541 275c Delete type=3 #34
+2024/01/16-13:57:21.217 fdc Level-0 table #39: started
+2024/01/16-13:57:21.218 fdc Level-0 table #39: 0 bytes OK
+2024/01/16-13:57:21.221 fdc Delete type=0 #37
+2024/01/16-13:57:21.222 fdc Manual compaction at level-0 from '!adventures!Afjs5om5BTsAXuZf' @ 72057594037927935 : 1 .. '!adventures!Afjs5om5BTsAXuZf' @ 0 : 0; will stop at (end)
+2024/01/16-13:57:21.222 fdc Manual compaction at level-1 from '!adventures!Afjs5om5BTsAXuZf' @ 72057594037927935 : 1 .. '!adventures!Afjs5om5BTsAXuZf' @ 0 : 0; will stop at (end)
