@@ -9,8 +9,8 @@ Instale o manifesto: https://raw.githubusercontent.com/brunocalado/monstro-da-se
 
 # Como Usar
  
-- Instale o módulo Babele e esse módulo.
-- Ative ambos.
+- Instale esse módulo.
+- Ative.
 - Altere o idioma em configurações para Português (Brasil)
 
 # Macros
