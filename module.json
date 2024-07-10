@@ -3,7 +3,7 @@
   "title":"Monstro da Semana - Português (Brasil)",
   "description":"Monstro da Semana para usar com o sistema PbtA.",
   
-  "version":"0.2.7",
+  "version":"0.2.8",
   
   "authors": [
     {
@@ -14,8 +14,8 @@
   ],
   
   "compatibility": {
-    "minimum": "11",
-    "verified": "11"
+    "minimum": "12",
+    "verified": "12"
   },
   
   "esmodules":[

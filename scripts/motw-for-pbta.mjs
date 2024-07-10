@@ -8,7 +8,7 @@ Hooks.once('init', () => {
    // register MotW settings
    game.settings.register('monstro-da-semana-pt-br', 'settings-override', {
       name: "Sobrescrever Configurações de Sistema",
-      default: false,
+      default: true,
       type: Boolean,
       scope: 'world',
       config: true,
