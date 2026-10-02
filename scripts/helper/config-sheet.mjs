@@ -1,3 +1,13 @@
+/*!
+ * Monstro da Semana - Português (Brasil)
+ * 2021 https://github.com/brunocalado
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 3.
+ */
+
+import { MODULE_ID, SETTINGS } from "../constants.js";
+
 export const configSheet = async () => {
 
    // pass the MotW sheet object to sheetConfig
@@ -268,7 +278,7 @@ export const configSheet = async () => {
   };
 
    // check if users wants to override settings; if not, hide all PbtA sheet options
-   let overrideSettings = await game.settings.get('monstro-da-semana-pt-br', 'settings-override');
+   let overrideSettings = await game.settings.get(MODULE_ID, SETTINGS.override);
 
    if (!overrideSettings) {
       await game.settings.set('pbta', 'advForward', true);

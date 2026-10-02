@@ -1,10 +1,8 @@
 {
-  "id":"monstro-da-semana-pt-br",
-  "title":"Monstro da Semana - Português (Brasil)",
-  "description":"Monstro da Semana para usar com o sistema PbtA.",
-  
-  "version":"0.3.1",
-  
+  "id": "monstro-da-semana-pt-br",
+  "title": "Monstro da Semana - Português (Brasil)",
+  "description": "Monstro da Semana para usar com o sistema PbtA.",
+  "version": "0.3.1",
   "authors": [
     {
       "name": "Mestre Digital",
@@ -12,39 +10,33 @@
       "flags": {}
     }
   ],
-  
   "compatibility": {
-    "minimum": "13",
-    "verified": "13"
+    "minimum": "14",
+    "verified": "14.368",
+    "maximum": "14"
   },
-  
-  "esmodules":[
+  "esmodules": [
     "./scripts/motw-for-pbta.mjs"
-   ],  
-   
-  "styles": [],  
-  
-  "url":"https://github.com/brunocalado/monstro-da-semana-pt-br",
-  "manifest": "https://raw.githubusercontent.com/brunocalado/monstro-da-semana-pt-br/main/module.json",
-  "download": "https://codeload.github.com/brunocalado/monstro-da-semana-pt-br/zip/main",
-  
-  "languages":[
-      {
-         "lang": "pt-BR",
-         "name": "Português (Brasil)",
-         "path":"pt-br.json"
-      }
-   ],
-
+  ],
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "pt-br.json"
+    }
+  ],
   "relationships": {
     "systems": [
       {
         "id": "pbta",
-        "type": "system"
+        "type": "system",
+        "compatibility": {
+          "minimum": "1.2.2",
+          "verified": "1.2.2"
+        }
       }
     ]
   },
-
   "packs": [
     {
       "label": "Monstro da Semana",
@@ -53,6 +45,8 @@
       "path": "packs/monstro-da-semana",
       "system": "pbta"
     }
-  ]
-  
+  ],
+  "url": "https://github.com/brunocalado/monstro-da-semana-pt-br",
+  "manifest": "https://github.com/brunocalado/monstro-da-semana-pt-br/releases/latest/download/module.json",
+  "download": "https://github.com/brunocalado/monstro-da-semana-pt-br/releases/latest/download/module.zip"
 }

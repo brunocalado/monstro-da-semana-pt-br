@@ -1,4 +1,7 @@
 monstro-da-semana-pt-br.lock
 WORKSPACE
 .gitattributes
-.gitignore
+# Compendium packs are built from packs/_source by `npm run pack`
+packs/*
+!packs/_source/
+node_modules/
