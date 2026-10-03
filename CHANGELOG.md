@@ -1,4 +1,4 @@
-# Unreleased
+# 0.4.0
 
 - [Changed] Foundry VTT v14 only (verified on 14.368), and PbtA 1.2.2 or later. The module no longer loads on v13.
 - [Changed] The "Monstro da Semana" adventure was migrated to the v14 data format. Its contents are unchanged: 2 scenes, 7 actors, 316 items, 1 journal entry, 38 folders.
