@@ -5,3 +5,8 @@ WORKSPACE
 packs/*
 !packs/_source/
 node_modules/
+.claude
+.claudeignore
+.gitattributes
+.gitignore
+CLAUDE.md
