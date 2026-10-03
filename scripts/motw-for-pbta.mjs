@@ -30,7 +30,7 @@ Hooks.once('init', () => {
       type: Boolean,
       scope: 'world',
       config: true,
-      hint: "Se marcar esta opção várias opções do sistema PBTA serão marcadas no mundo. Desmarque ela para poder alterar as configurações.",
+      hint: "Se marcada, o módulo aplica a ficha do Monstro da Semana e várias opções do sistema PbtA. Desmarque para configurar a ficha e as opções manualmente.",
       requiresReload: true
    });
 
@@ -48,12 +48,5 @@ Hooks.once('setup', () => {
    };
 });
 
-Hooks.once('pbtaSheetConfig', () => {
-
-   // Disable the sheet config form.
-   //game.settings.set('pbta', 'sheetConfigOverride', true);
-
-   // Replace the game.pbta.sheetConfig with the MotW version.
-   //configSheet();
-
-});
+// Replace PbtA's sheet with the MotW one, unless the GM turned the override off.
+Hooks.once('pbtaSheetConfig', configSheet);
