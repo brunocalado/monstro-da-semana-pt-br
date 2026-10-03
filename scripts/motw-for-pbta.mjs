@@ -6,7 +6,6 @@
  * it under the terms of the GNU General Public License version 3.
  */
 
-import { MODULE_ID, SETTINGS } from "./constants.js";
 import {
    configSheet
 } from "./helper/config-sheet.mjs"
@@ -20,22 +19,6 @@ const ITEM_TAGS = [
    "[material]"
 ];
 
-// once the game has initialized, set up the module
-Hooks.once('init', () => {
-
-   // register MotW settings
-   game.settings.register(MODULE_ID, SETTINGS.override, {
-      name: "Sobrescrever Configurações de Sistema",
-      default: true,
-      type: Boolean,
-      scope: 'world',
-      config: true,
-      hint: "Se marcada, o módulo aplica a ficha do Monstro da Semana e várias opções do sistema PbtA. Desmarque para configurar a ficha e as opções manualmente.",
-      requiresReload: true
-   });
-
-})
-
 // PbtA only fires `pbtaSheetConfig` on GM clients (in its `ready` hook), so the tag override is
 // set here instead: every client needs it, or players' item sheets miss the MotW tags.
 // `game.pbta` is assigned in the system's `init`, which always runs before `setup`.
@@ -48,5 +31,5 @@ Hooks.once('setup', () => {
    };
 });
 
-// Replace PbtA's sheet with the MotW one, unless the GM turned the override off.
+// Replace PbtA's sheet with the MotW one.
 Hooks.once('pbtaSheetConfig', configSheet);

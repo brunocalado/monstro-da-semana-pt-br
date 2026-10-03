@@ -6,8 +6,6 @@
  * it under the terms of the GNU General Public License version 3.
  */
 
-import { MODULE_ID, SETTINGS } from "../constants.js";
-
 // PbtA options the module enforces alongside the sheet.
 const PBTA_SETTINGS = {
    advForward: true,
@@ -335,8 +333,6 @@ export const MOTW_SHEET_CONFIG = {
 // Runs from pbtaSheetConfig, which PbtA fires on GM clients only. Once sheetConfigOverride is
 // on, PbtA stores the config in its world setting so players load it too.
 export const configSheet = async () => {
-
-   if (!game.settings.get(MODULE_ID, SETTINGS.override)) return;
 
    // Assigned before the first await: PbtA builds the actor templates from
    // game.pbta.sheetConfig right after the hook returns.

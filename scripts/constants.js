@@ -7,7 +7,3 @@
  */
 
 export const MODULE_ID = "monstro-da-semana-pt-br";
-
-export const SETTINGS = {
-   override: "settings-override"
-};
